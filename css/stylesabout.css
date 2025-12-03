@@ -1,0 +1,179 @@
+/* General mixes spacing errors */
+* {
+    margin: 0 auto;
+}
+/* General body and header styles */
+body {
+    margin: 0;
+    background-color: #efdeb6;
+}
+
+/* General styles for the header and navigation bar */
+header {
+    margin: 0;
+    margin-top: 5vh;  
+    text-align: center;
+    background-color: #556b2f;
+    position: relative;  /* Added for potential animations */
+}
+
+/* Define the growIn keyframes globally*/
+@keyframes grow {
+    from {
+        width: 1%; top: 100%; left: 53%;
+        opacity: 0;  
+    }
+    to {
+        width: 70%; top: 4.5%; left: 16%;
+        opacity: 1;  
+
+    }
+}
+
+/* New styles for the tree image animation */
+#tree {
+    position: absolute;
+    top: 4.5%;   
+    left: 16%;   
+    width: 70%; 
+    animation-name: grow;
+    animation-duration: 3s; 
+    
+}
+
+/* Manipulates the Green Image for the Header */
+#banner { 
+    /*Manipulates the Green Image for the Header*/
+        display: block;
+        margin: 0 auto 20px auto; 
+        width: 100%; 
+    }
+
+/* Manipulates the navigation bar div */
+nav {
+    background-color: #3b4d2a;
+    position: fixed;
+    top: -10px;  
+    right: 0;
+    width: 100%;
+    height: 80px;  
+    align-items: center; 
+    z-index: 100;
+}
+
+/*Manipulates the navigation bar content*/
+nav a{
+    margin-top: -30px;
+    margin-right: 10px;
+    float: right;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 100;
+}
+
+/* actual code for the animation for nav */
+nav a:hover{
+    transform: translateY(-10px) scale(1.1);
+}
+
+/*adds animations for the logo also*/
+nav img{
+    transition: transform 0.5s ease;
+    margin-top: 5px;
+    float: left;
+}
+
+/* actual code for the animation for nav image */
+nav img:hover{
+    transform: translateY(-20px) scale(1.1);
+}
+
+    /*Manipulates the section where the content is found*/
+section {
+    width: 80%;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    }   
+
+    /*Manipulates the founder's image and text*/
+#pfp{
+    position: relative;
+    float: left;
+    overflow: auto;
+    left: 10px;
+    text-align: justify;
+}
+
+    /*Manipulates the text about the founder*/
+#foundertext{
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    width: 90%;
+    text-align: justify;
+}
+
+    /*Manipulates the aside section*/
+#platforms{
+    font-size: 35px;
+    background-color: #c6d870;
+    border: 2px black solid;
+    width: 50%;
+    position: relative;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+#platforms:hover{
+    background-color: #3b4d2a;
+    color: #c6d870;
+}
+
+/*Manipulates the aside image and text*/
+aside{
+    position: relative;
+    top: 10px;
+    text-align: center;
+}
+
+/*Article content styling, adding transitions and animations*/
+article a{
+    transition: color 1.3s ease, box-shadow 0.3s ease;
+}
+
+article a:hover{
+    color: red;
+}
+article a:visited{
+    color: gray;
+}
+
+/*Footer bar*/
+footer {
+    clear: both;
+    background-color: #c6d870;
+    position: relative;
+    bottom: 0%;
+    left: -1%;       
+    width: 100%;     
+    height: 425px;     
+    font-size: large;
+    z-index: 99;
+    padding: 10px;
+    }
+
+/*Footer content styling, adding transitions and animations*/
+footer a{
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+footer a:link{
+    color: blue;
+}
+footer a:hover{
+    color: red;
+}
+footer a:visited{
+    color: gray;
+}
+footer a:active{
+    color: cyan;
+}
